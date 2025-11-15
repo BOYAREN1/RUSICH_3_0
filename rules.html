@@ -1,310 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Женская одежда - StitchCraft</title>
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="category.css">
+<link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка -->
     <header class="header">
-        <div class="logo-container">
-            <img class="logo" src="image\129-1293585_open-triangle-symbol.png" alt="логотип">
-            <h1 class="site-title">РУСИЧ</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                        <div class="logo">SC</div>
+                        <span class="company-name">Ваша компания</span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="index.html#products" class="nav-link">Изделия</a>
+                    <a href="index.html#about" class="nav-link">О нас</a>
+                </nav>
+                
+                <div class="header-contacts">
+                    <div class="phone">+7 (495) 123-45-67</div>
+                    <div class="address">ул. Портная, 15</div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Сервер</a></li>
-            <li class="nav-item"><a href="events.html">Ивенты</a></li>
-            <li class="nav-item"><a href="rules.html">Правила</a></li>
-        </ul>
     </header>
-    <section>
-        <h2 class="rules-rusich">Правила сервера [РУСИЧ]</h2>
-         <div class="sector-nav">
-            <a href="#basic-rules" class="sector-link">Базовые правила</a>
-            <a href="#game-rules" class="sector-link">Игровые правила</a>
-            <a href="#squadleader-rules" class="sector-link">Правила для Сквад-Лидеров</a>
-            <a href="#cmd-rules" class="sector-link">Правила для CMD</a>
-            <a href="#tech-rules" class="sector-link">Правила для ТЕХ отрядов</a>
-            <a href="#tech-disputes" class="sector-link">Споры по технике</a>
-            <a href="#admin-rules" class="sector-link">Администрация</a>
-        </div>
 
-        <div class="container-rules" id="basic-rules">
-            <h3 class="rules-header">Базовые правила</h3>
-            <p class="rule">
-                <span class="rule-number">1.1</span> — Ваш НИК должен быть легко читаемым и произносимым.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.2</span> — Запрещается совершать любые действия в любой форме, нарушающие действующее законодательство РФ.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.3</span> — Запрещается использовать стороннее ПО, макросы или модификации файлов игры, а также её уязвимости, направленные на получение преимущества в игре способами, не предусмотренными разработчиком игры.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.4</span> — Саундпад на сервере запрещён в начале и конце матча (во время матча отключить по первому требованию).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.5</span> — Создание помех в голосовом чате путём воспроизведения бессмысленных звуков и т.п - ЗАПРЕЩЕНО.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.6</span> — Запрещается реклама и агитация в любом виде без разрешения администрации сервера.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.7</span> — Оскорбления между игроками не приветствуются. Соблюдайте культуру общения.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">1.8</span> — Оскорбление администрации преследуется по законам военного времени.
-            </p>
-        </div>
-        
-        <div class="container-rules" id="game-rules">
-            <h3 class="rules-header">Игровые правила</h3>
-            <p class="rule">
-                <span class="rule-number">2.1</span> — Запрещается совершать намеренные действия, направленные на нанесение вреда своей команде (умышленный "слив" техники, умышленное нанесение урона игрокам, постройкам и техники своей команды и т.д.) за исключением случаев убийства/уничтожения по приказу командира стороны, либо командира отряда и/или для предотвращения руина игры.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">2.2</span> — Запрещается совершать умышленные действия, направленные на создание помех в игре другим игрокам каким-либо образом.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">2.3</span> — Запрещается слив/получение информации о противоположной команде.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">2.4</span> — Запрещается находится на сервере и бездействовать более 10 минут. Игра без отряда более 5 минут запрещена (автокик).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">2.5</span> — ДРГ не может быть больше 5 человек.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">2.6</span> — Мейнкемп ЗАПРЕЩЕН (не менее 600м от иконки мейна).
-            </p>
-        </div>
-        
-        <div class="container-rules" id="squadleader-rules">
-            <h3 class="rules-header">Правила для Сквад-Лидеров</h3>
-            <p class="rule">
-                <span class="rule-number">3.1</span> — Командир отряда обязан говорить на русском языке, взаимодействовать с другими командирами и иметь кит командира отряда. Отсутствие микрофона и коммуникации приведет к расформированию отряда.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.2</span> — Командир отряда обязан выполнять приказы CMD.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.3</span> — Командир отряда может исключить любого игрока отряда без объяснения причин.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.4</span> — Запрещается создание отряда без намерения им командовать.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.5</span> — Командование отрядом может быть передано другому игроку только по взаимному согласию (если вам перекинули сквад-лидера без вашего согласия - расформируйте отряд).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.6</span> — Разрешается использование БМП в ПЕХ отряде (все БТРы, БМП-1, Лав-25, Страйкер с пулеметом).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.7</span> — Запрещается использование техники, принадлежащей другому отряду без согласия Командира отряда, владеющего данной техникой.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">3.8</span> — Запрещается закрывать отряд, состоящий только из Командира отряда. Отряд, состоящий только из Командира отряда, может быть закрыт, только с целью использования боевой легкой техники и вертолёта (передвижные миномёты, ПТУР, СПГ, Зенитные установка, РСЗО).
-            </p>
-        </div>
-        
-        <div class="container-rules" id="cmd-rules">
-            <h3 class="rules-header">Правила для CMD</h3>
-            <p class="rule">
-                <span class="rule-number">4.1</span> — CMD обязан находится в пехотном отряде, отряде логистической поддержки, или артиллерийском отряде. Запрещается брать CMD стороны в: технический отряд и ДРГ.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">4.2</span> — Командир стороны управляет всеми отрядами и техникой в его распоряжении (кроме случаев, указанных в п. 4.5).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">4.3</span> — Приказы CMD обязательны к выполнению, кроме приказов, нарушающих правила сервера. Командир стороны имеет право отдавать только общие приказы. Командиры отрядов сами решают, как выполнить поставленную задачу.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">4.4</span> — CMD обязан знать механики игры, иметь понимание того, что происходит на поле боя.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">4.5</span> — Если нет желающих играть за CMD стороны, то его может взять любой командир отряда ради абилок.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">4.6</span> — Если CMD некомпетентный, сквадные вправе потребовать его отстранения.
-            </p>
-        </div>
-        
-        <div class="container-rules" id="tech-rules">
-            <h3 class="rules-header">Правила для ТЕХ отрядов</h3>
-            <p class="rule">
-                <span class="rule-number">5.1</span> — Техническому отряду рекомендуется иметь соответствующее название (тех, верт и тд.).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.2</span> — Техника, для управления которой требуется кит Crewman, является тяжелой.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.3</span> — Технический отряд может использовать только одну тяжелую технику с экипажем, состоящим из командира отряда и минимум одного члена экипажа.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.4</span> — Командир технического отряда обязан иметь снаряжение Lead Crewman и находиться в занятой его отрядом технике.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.5</span> — Если в технике остался один член отряда, он обязан вернуть технику на мейн.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.6</span> — Запрещается использовать вертолёт, без обладания базовых навыков пилотирования и не возможности его посадить без критических повреждений.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.7</span> — Управлять вертолетом разрешается только авиационному отряду в количестве до 5 человек, при обязательном наличии командира отряда с китом «Lead Pilot».
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.8</span> — Боевой вертолет Апач считается за тяжелую технику и требует полного экипажа из Lead Pilot и Pilot (2 человека).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">5.9</span> — Слив техники запрещен.
-            </p>
-        </div>
-        
-        <div class="container-rules" id="tech-disputes">
-            <h3 class="rules-header">Споры по технике</h3>
-            <p class="rule">
-                <span class="rule-number">6.1</span> — Во время отчета стартовой фазы клейм техники разрешен тех отрядам с неполным экипажем. Если до конца отчета стартовой фазы осталось 30 секунд, а тех отряд не имеет двух человек, то он должен отдать технику полному отряду по первому их требованию.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">6.2</span> — После окончания стартовой фазы спор по тяжелой техники решается командой !ROLL между командирами отрядов (если командир отряда отказыввает от команды !ROLL и забирает технику, то наказание - бан).
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">6.3</span> — Команда !ROLL прописывается после появления техники на мейне, иначе команда может считаться не действительной.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">6.4</span> — Легкая техника достается тому, кто первый ее занял.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">6.5</span> — Реклейм техники без согласия с лидером отряда – запрещен (включая легкую техники).
-            </p>
-        </div>
-
-        <div class="container-rules" id="admin-rules">
-            <h3 class="rules-header">Администрация сервера</h3>
-            <p class="rule">
-                <span class="rule-number">7.1</span> — Администраторы проекта, находящиеся на игровых серверах не обязаны тотчас отвечать на вашу жалобу.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.2</span> — Окончательная трактовка правил сервера и их изменение остаются за Администрацией проекта.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.3</span> — Сроки наказания за нарушение и сами нарушения фиксированными не являются и остаются на усмотрение старшей администрацией проекта.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.4</span> — Состав Администрации проекта определяет только Администрация проекта.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.5</span> — Препятствие Администрации проекта во время рассмотрения конфликтной ситуации является поводом для наказания.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.6</span> — Жалобы на Администрацию проекта принимаются только в специальном канале.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.7</span> — Любым сбором средств на развитие проекта занимается только Администрация проекта.
-            </p>
-            
-            <p class="rule">
-                <span class="rule-number">7.8</span> — Оскорбления Администрации сервера могут повлечь за собой санкции, включая блокировку, как в Discord, так и в игре.
-            </p>
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumbs-nav">
+                <a href="index.html">Главная</a>
+                <span class="breadcrumbs-separator">/</span>
+                <a href="index.html#products">Изделия</a>
+                <span class="breadcrumbs-separator">/</span>
+                <span class="breadcrumbs-current">Женская одежда</span>
+            </nav>
         </div>
     </section>
-      <footer>
-        <p class="footer-txt">© 2025 Клан "РУСИЧ" | Все права защищены</p>
-        <p class="footer-txt">Неофициальное сообщество игроков Squad. Мы не аффилированы с Offworld Industries.</p>
-        <div class="image-links-container">
-            <a href="#" class="image-link">
-                <img src="image\free-icon-telegram-2111646.png" alt="Телеграм">
-                <span class="image-caption">Наш канал</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image\discord.png" alt="Дискорд">
-                <span class="image-caption">Наш сервер</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image\free-icon-youtube-3670147.png" alt="YouTube">
-                <span class="image-caption">Наш YouTube</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image\dataset-card.png" alt="RUTUBE">
-                <span class="image-caption">Наш RUTUBE</span>
-            </a>
+
+    <!-- Заголовок категории -->
+    <section class="category-header">
+        <div class="container">
+            <div class="category-info">
+                <h1>Женская одежда</h1>
+                <p>Индивидуальный пошив женской одежды премиум-класса. Создаем уникальные вещи, которые подчеркивают вашу индивидуальность и безупречно сидят по фигуре.</p>
+                <div class="category-stats">
+                    <div class="stat">
+                        <span class="stat-number">48</span>
+                        <span class="stat-label">моделей</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">тканей</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">недели</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фильтры -->
+    <section class="filters">
+        <div class="container">
+            <div class="filters-content">
+                <div class="filter-group">
+                    <label>Тип одежды:</label>
+                    <select class="filter-select">
+                        <option value="all">Все</option>
+                        <option value="dresses">Платья</option>
+                        <option value="blouses">Блузы</option>
+                        <option value="skirts">Юбки</option>
+                        <option value="suits">Костюмы</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Стиль:</label>
+                    <select class="filter-select">
+                        <option value="all">Все</option>
+                        <option value="classic">Классический</option>
+                        <option value="modern">Современный</option>
+                        <option value="evening">Вечерний</option>
+                        <option value="business">Деловой</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Цена:</label>
+                    <select class="filter-select">
+                        <option value="all">Любая</option>
+                        <option value="budget">До 15 000 ₽</option>
+                        <option value="medium">15 000 - 30 000 ₽</option>
+                        <option value="premium">От 30 000 ₽</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка товаров -->
+    <section class="products-grid-section">
+        <div class="container">
+            <div class="products-grid-category">
+                <!-- Товар 1 -->
+                <div class="product-card-category">
+                    <a href="item.html" class="product-link">
+                        <div class="product-image-category">
+                            <img src="https://i.pinimg.com/736x/b2/f0/02/b2f002d617fe83d7dee90ffcfee72748.jpg" alt="Вечернее платье Афина" loading="lazy">
+                            <div class="product-badge">Хит</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Вечернее платье</h3>
+                            <p class="product-description">Шелковое платье с кружевной отделкой для особых случаев</p>
+                            <div class="product-price">25 000 ₽</div>
+                            <div class="product-meta">
+                                <span class="material">Шелк, кружево</span>
+                                <span class="time">4 недели</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="product-card-category">
+                    <a href="item.html" class="product-link">
+                        <div class="product-image-category">
+                            <img src="https://i.pinimg.com/736x/ff/81/2f/ff812fda20e919e198b98435ee2f0d0b.jpg" alt="Деловой костюм Милена" loading="lazy">
+                            <div class="product-badge new">Новинка</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Деловой костюм</h3>
+                            <p class="product-description">Костюм из итальянской шерсти для деловых встреч</p>
+                            <div class="product-price">32 000 ₽</div>
+                            <div class="product-meta">
+                                <span class="material">Шерсть, вискоза</span>
+                                <span class="time">3 недели</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="product-card-category">
+                    <a href="item.html" class="product-link">
+                        <div class="product-image-category">
+                            <img src="https://i.pinimg.com/736x/a1/f0/10/a1f01084302cda0a837195397d006196.jpg" alt="Летняя блуза Жасмин" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Летняя блуза</h3>
+                            <p class="product-description">Легкая блуза из натурального хлопка с вышивкой</p>
+                            <div class="product-price">12 000 ₽</div>
+                            <div class="product-meta">
+                                <span class="material">Хлопок, шифон</span>
+                                <span class="time">2 недели</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Товар 4 -->
+                <div class="product-card-category">
+                    <a href="item.html" class="product-link">
+                        <div class="product-image-category">
+                            <img src="https://i.yavitrina.ru/yubka-reversal-razmer-m-sinii-293643384" alt="Юбка-карандаш Классик" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Юбка "Классик"</h3>
+                            <p class="product-description">Универсальная юбка для офиса и повседневной носки</p>
+                            <div class="product-price">15 000 ₽</div>
+                            <div class="product-meta">
+                                <span class="material">Костюмная ткань</span>
+                                <span class="time">2 недели</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Товар 5 -->
+                <div class="product-card-category">
+                    <a href="item.html" class="product-link">
+                        <div class="product-image-category">
+                            <img src="https://i.pinimg.com/736x/e5/44/22/e5442268405b7474ac4f132b86915b23.jpg" alt="Коктейльное платье Вечер" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Коктейльное платье "Вечер"</h3>
+                            <p class="product-description">Элегантное платье для вечеринок и мероприятий</p>
+                            <div class="product-price">28 000 ₽</div>
+                            <div class="product-meta">
+                                <span class="material">Атлас, гипюр</span>
+                                <span class="time">3 недели</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Товар 6 -->
+                <div class="product-card-category">
+                    <a href="item.html" class="product-link">
+                        <div class="product-image-category">
+                            <img src="https://i.pinimg.com/1200x/8d/40/f6/8d40f64844136b4761015e1ea16a9bbb.jpg" alt="Пальто Осень" loading="lazy">
+                            <div class="product-badge">Хит</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Пальто "Осень"</h3>
+                            <p class="product-description">Теплое пальто из кашемира с классическим кроем</p>
+                            <div class="product-price">45 000 ₽</div>
+                            <div class="product-meta">
+                                <span class="material">Кашемир, шерсть</span>
+                                <span class="time">5 недель</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link next">→</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA секция -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Не нашли подходящую модель?</h2>
+                <p>Мы создадим индивидуальный дизайн именно для вас</p>
+                <a href="index.html#home" class="btn-primary">Обсудить проект</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo-section">
+                        <div class="logo">SC</div>
+                        <span class="company-name">StitchCraft</span>
+                    </div>
+                    <p>Профессиональное швейное бюро с индивидуальным подходом к каждому клиенту.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>ул. Портная, 15, Москва</p>
+                    <p>info@stitchcraft.ru</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 10:00 - 20:00</p>
+                    <p>Сб-Вс: 11:00 - 18:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ваша компания. Все права защищены.</p>
+            </div>
         </div>
     </footer>
-    <script>
-  // Меню бургер
-  const menuToggle = document.createElement('div');
-  menuToggle.className = 'menu-toggle';
-  menuToggle.innerHTML = '<span></span><span></span><span></span>';
-  document.querySelector('.header').appendChild(menuToggle);
-  
-  const navList = document.querySelector('.nav-list');
-  const menuItems = document.querySelectorAll('.nav-item');
-  
-  menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navList.classList.toggle('active');
-  });
-  
-  // Закрытие меню при клике на пункт
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      menuToggle.classList.remove('active');
-      navList.classList.remove('active');
-    });
-  });
-  
-  // Эффект при скролле
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      document.querySelector('.header').classList.add('scrolled');
-    } else {
-      document.querySelector('.header').classList.remove('scrolled');
-    }
-  });
-</script>
 
+    <script src="script.js"></script>
 </body>
 </html>
