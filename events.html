@@ -1,178 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Ваша компания</title>
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="hero.css">
+<link rel="stylesheet" href="products.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка -->
     <header class="header">
-        <div class="logo-container">
-            <img class="logo" src="image\129-1293585_open-triangle-symbol.png" alt="логотип">
-            <h1 class="site-title">РУСИЧ</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">SC</div>
+                    <span class="company-name">Ваша компания</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Главная</a>
+                    <a href="#products" class="nav-link">Изделия</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                </nav>
+                
+                <div class="header-contacts">
+                    <div class="phone">+7 (495) 123-45-67</div>
+                    <div class="address">ул. Портная, 15</div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Сервер</a></li>
-            <li class="nav-item"><a href="events.html">Ивенты</a></li>
-            <li class="nav-item"><a href="rules.html">Правила</a></li>
-        </ul>
-    </header>
-    <header class="page-header">
-        <h1>КАЛЕНДАРЬ ИВЕНТОВ SQUAD</h1>
-        <p>Присоединяйтесь к организованным сражениям с сообществом</p>
     </header>
     
-    <div class="container-events">
-        <div class="filter-controls">
-            <div class="filter-group">
-                <label for="month">Месяц:</label>
-                <select id="month">
-                    <option value="all">Все</option>
-                    <option value="january">Январь</option>
-                    <option value="february">Февраль</option>
-                    <option value="march">Март</option>
-                    <option value="april">Апрель</option>
-                    <option value="may">Май</option>
-                    <option value="june">Июнь</option>
-                    <option value="july">Июль</option>
-                    <option value="august">Август</option>
-                    <option value="september">Сентябрь</option>
-                    <option value="october">Октябрь</option>
-                    <option value="november">Ноябрь</option>
-                    <option value="december">Декабрь</option>
-                </select>
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Искусство пошива одежды</h1>
+                <p class="hero-subtitle">Создаем уникальные вещи, которые подчеркивают вашу индивидуальность</p>
+                
+                <form class="request-form">
+                    <h3>Оставьте заявку</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Ваш телефон" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Остальные секции без изменений -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>О нашем бюро</h2>
+                <p>Создаем красоту с 2010 года</p>
             </div>
             
-            <div class="filter-group">
-                <label for="type">Тип ивента:</label>
-                <select id="type">
-                    <option value="all">Все</option>
-                    <option value="tournament">Турнир</option>
-                    <option value="training">Тренировка</option>
-                    <option value="fun">Развлекательный</option>
-                    <option value="charity">Благотворительный</option>
-                </select>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы - команда профессиональных портных с многолетним опытом работы в сфере индивидуального пошива одежды. Наше бюро объединяет традиционные техники шитья с современными тенденциями моды.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <h4>10+ лет</h4>
+                            <p>опыта в пошиве</p>
+                        </div>
+                        <div class="feature">
+                            <h4>5000+</h4>
+                            <p>довольных клиентов</p>
+                        </div>
+                        <div class="feature">
+                            <h4>100%</h4>
+                            <p>гарантия качества</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                    <div class="image-placeholder">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab631c28adee2335a60f7d51f2327e91830114b287709d826bc35ddde9521bbfb&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          
+                </div>
             </div>
-            
-            <div class="filter-group">
-                <label for="region">Регион:</label>
-                <select id="region">
-                    <option value="all">Все</option>
-                    <option value="europe">Европа</option>
-                    <option value="na">Северная Америка</option>
-                    <option value="asia">Азия</option>
-                    <option value="oceania">Океания</option>
-                </select>
-            </div>
-            
-            <button class="signup-btn" style="max-width: 200px; margin-top: 28px;">Применить фильтры</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+    <div class="container">
+        <div class="section-header">
+            <h2>Наши изделия</h2>
+            <p>Шьем с любовью к деталям</p>
         </div>
         
-        <h2>Ближайшие ивенты</h2>
-        
-        <div class="calendar">
-            <div class="event-card">
-              <h3 class="event-title">Учения "Врата Овертона"</h3>
-              <div class="event-date">12 апреля 2025, 20:00 МСК</div>
-              <div class="event-description">
-                Тестовая запись на ивент
-              </div>
-              <div class="event-details">
-                <span class="event-detail">Европа</span>
-                <span class="event-detail">20vs20</span>
-                <span class="event-detail">Учения</span>
-                <span class="event-detail">Орешник</span>
-              </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScLvzPiIv8NZn1qLVXUl0uwajR-EAHL46Qqj485bROSgdKnwQ/viewform?usp=dialog" class="signup-btn" target="_blank">Зарегистрироваться</a>
-            </div>          
-          </div>
-        
-        <h2>Прошедшие ивенты</h2>
-        
-        <div class="calendar">
-            <div class="event-card">
-                <h3 class="event-title">Бахмутская мясорубка</h3>
-                <div class="event-date">1 августа 2023 - 20 мая 2023</div>
-                <div class="event-description">
-                    Метр за метр и 224 дня - освобождение Бахмута
+        <div class="products-grid">
+            <a href="categories.html" class="product-link">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/bd/7a/23/bd7a236f80ef13d8d0465ef1a7088488.jpg" alt="Женская одежда">
+                    </div>
+                    <h3>Женская одежда</h3>
+                    <p>Платья, блузы, юбки и костюмы по индивидуальным меркам</p>
                 </div>
-                <div class="event-details">
-                    <span class="event-detail">Освободительный</span>
-                    <span class="event-detail">Европа</span>
-                    <span class="event-detail">80 участников</span>
+            </a>
+            
+            <a href="categories.html" class="product-link">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=8a6cf0f9fcb953980d8705394f7db693_l-4491734-images-thumbs&n=13" alt="Свадебные наряды">
+                    </div>
+                    <h3>Свадебные наряды</h3>
+                    <p>Создаем идеальные свадебные платья и костюмы</p>
                 </div>
-                <button class="signup-btn" disabled>Завершено</button>
-            </div>
-            <div class="event-card">
-                <h3 class="event-title">Освобождение Мариуполя</h3>
-                <div class="event-date">24 февраля 2022 - 20 мая 2022</div>
-                <div class="event-description">
-                    Исторический ивент с воссозданием реальных событий. Игроки могли принять участие в масштабном штурме города
+            </a>
+            
+            <a href="categories.html" class="product-link">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://sun9-6.userapi.com/impf/c849024/v849024540/a3782/FfIOyqV62rI.jpg?size=1000x715&quality=96&sign=aed9df0518f17ad949e7f14938a7e847&c_uniq_tag=YCvH2ce8UptgfCHs092RqCG4mWnhIY5T2rjG8CgSwHU&type=album" alt="Аксессуары">
+                    </div>
+                    <h3>Аксессуары</h3>
+                    <p>Сумки, ремни и другие аксессуары ручной работы</p>
                 </div>
-                <div class="event-details">
-                    <span class="event-detail">Освободительный</span>
-                    <span class="event-detail">Европа</span>
-                    <span class="event-detail">80 участников</span>
-                </div>
-                <button class="signup-btn" disabled>Завершено</button>
-            </div>
+            </a>
         </div>
     </div>
+</section>
 
-    <script>
-        // Фильтрация ивентов
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterBtn = document.querySelector('.filter-controls .signup-btn');
-            const monthSelect = document.getElementById('month');
-            const typeSelect = document.getElementById('type');
-            const regionSelect = document.getElementById('region');
-            const eventCards = document.querySelectorAll('.event-card');
-            
-            filterBtn.addEventListener('click', function() {
-                const monthValue = monthSelect.value;
-                const typeValue = typeSelect.value;
-                const regionValue = regionSelect.value;
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo-section">
+                        <div class="logo">SC</div>
+                        <span class="company-name">StitchCraft</span>
+                    </div>
+                    <p>Профессиональное швейное бюро с индивидуальным подходом к каждому клиенту.</p>
+                </div>
                 
-                eventCards.forEach(card => {
-                    const cardMonth = card.dataset.month || 'all';
-                    const cardType = card.dataset.type || 'all';
-                    const cardRegion = card.dataset.region || 'all';
-                    
-                    const monthMatch = monthValue === 'all' || cardMonth === monthValue;
-                    const typeMatch = typeValue === 'all' || cardType === typeValue;
-                    const regionMatch = regionValue === 'all' || cardRegion === regionValue;
-                    
-                    if (monthMatch && typeMatch && regionMatch) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
-      <footer>
-        <p class="footer-txt">© 2025 Клан "РУСИЧ" | Все права защищены</p>
-        <p class="footer-txt">Неофициальное сообщество игроков Squad. Мы не аффилированы с Offworld Industries.</p>
-        <div class="image-links-container">
-            <a href="#" class="image-link">
-                <img src="image\free-icon-telegram-2111646.png" alt="Телеграм">
-                <span class="image-caption">Наш канал</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image\discord.png" alt="Дискорд">
-                <span class="image-caption">Наш сервер</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image\free-icon-youtube-3670147.png" alt="YouTube">
-                <span class="image-caption">Наш YouTube</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image\dataset-card.png" alt="RUTUBE">
-                <span class="image-caption">Наш RUTUBE</span>
-            </a>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>ул. Портная, 15, Москва</p>
+                    <p>info@stitchcraft.ru</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 10:00 - 20:00</p>
+                    <p>Сб-Вс: 11:00 - 18:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ваша компания. Все права защищены.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
