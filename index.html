@@ -3,398 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>РУСИЧ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Ваша компания</title>
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="hero.css">
+<link rel="stylesheet" href="products.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 <body>
+    <!-- Шапка -->
     <header class="header">
-        <div class="logo-container">
-            <img class="logo" src="image/129-1293585_open-triangle-symbol.png" alt="логотип">
-            <h1 class="site-title">РУСИЧ</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">SC</div>
+                    <span class="company-name">Ваша компания</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Главная</a>
+                    <a href="#products" class="nav-link">Изделия</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                </nav>
+                
+                <div class="header-contacts">
+                    <div class="phone">+7 (495) 123-45-67</div>
+                    <div class="address">ул. Портная, 15</div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Сервер</a></li>
-            <li class="nav-item"><a href="events.html">Ивенты</a></li>
-            <li class="nav-item"><a href="rules.html">Правила</a></li>
-        </ul>
     </header>
     
-    <section class="promo">
-        <h1 class="promo_header">ИГРАЕМ ПО-НОВОМУ - СОХРАНЯЕМ ТРАДИЦИИ</h1>
-        <div class="server-status">
-            <div class="status-item">Сейчас на сервере: <span id="players" class="loading">загрузка...</span></div>
-            <div class="status-item">Текущая карта: <span id="map" class="loading">загрузка...</span></div>
-            <div class="status-item">Статус: <span id="status">не подключено</span></div>
-        </div>
-        <div class="button-container">
-            <button class="promo_btn">Присоединиться</button>
-            <button class="promo_btn2"><a class="link-rules" href="rules.html">Правила сервера</a></button>
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Искусство пошива одежды</h1>
+                <p class="hero-subtitle">Создаем уникальные вещи, которые подчеркивают вашу индивидуальность</p>
+                
+                <form class="request-form">
+                    <h3>Оставьте заявку</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Ваш телефон" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Отправить заявку</button>
+                </form>
+            </div>
         </div>
     </section>
-    
-    <section class="features">
-        <h2 class="section-title">Что такое пати на сервере РУСИЧ?</h2>
+
+    <!-- Остальные секции без изменений -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>О нашем бюро</h2>
+                <p>Создаем красоту с 2010 года</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы - команда профессиональных портных с многолетним опытом работы в сфере индивидуального пошива одежды. Наше бюро объединяет традиционные техники шитья с современными тенденциями моды.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <h4>10+ лет</h4>
+                            <p>опыта в пошиве</p>
+                        </div>
+                        <div class="feature">
+                            <h4>5000+</h4>
+                            <p>довольных клиентов</p>
+                        </div>
+                        <div class="feature">
+                            <h4>100%</h4>
+                            <p>гарантия качества</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                    <div class="image-placeholder">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab631c28adee2335a60f7d51f2327e91830114b287709d826bc35ddde9521bbfb&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+    <div class="container">
+        <div class="section-header">
+            <h2>Наши изделия</h2>
+            <p>Шьем с любовью к деталям</p>
+        </div>
         
-        <div class="cards-container">
-            <!-- Карточка 1 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-users"></i>
+        <div class="products-grid">
+            <a href="categories.html" class="product-link">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.pinimg.com/736x/bd/7a/23/bd7a236f80ef13d8d0465ef1a7088488.jpg" alt="Женская одежда">
+                    </div>
+                    <h3>Женская одежда</h3>
+                    <p>Платья, блузы, юбки и костюмы по индивидуальным меркам</p>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title">Командное взаимодействие</h3>
-                    <p class="card-text">Создаются небольшие группы для более тесного общения во время игр</p>
-                </div>
-            </div>
+            </a>
             
-            <!-- Карточка 2 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-chess"></i>
+            <a href="categories.html" class="product-link">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=8a6cf0f9fcb953980d8705394f7db693_l-4491734-images-thumbs&n=13" alt="Свадебные наряды">
+                    </div>
+                    <h3>Свадебные наряды</h3>
+                    <p>Создаем идеальные свадебные платья и костюмы</p>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title">Обсуждение тактик</h3>
-                    <p class="card-text">Игроки в одном пати могут вместе работать над улучшением своих навыков</p>
-                </div>
-            </div>
+            </a>
             
-            <!-- Карточка 3 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-comments"></i>
+            <a href="categories.html" class="product-link">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://sun9-6.userapi.com/impf/c849024/v849024540/a3782/FfIOyqV62rI.jpg?size=1000x715&quality=96&sign=aed9df0518f17ad949e7f14938a7e847&c_uniq_tag=YCvH2ce8UptgfCHs092RqCG4mWnhIY5T2rjG8CgSwHU&type=album" alt="Аксессуары">
+                    </div>
+                    <h3>Аксессуары</h3>
+                    <p>Сумки, ремни и другие аксессуары ручной работы</p>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title">Личное общение</h3>
-                    <p class="card-text">Для комфортной и дружеской атмосферы, где можно обсуждать разные темы</p>
-                </div>
-            </div>
-            
-            <!-- Карточка 4 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-laugh-beam"></i>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Веселье</h3>
-                    <p class="card-text">Образование постоянных групп для совместных игр и веселья</p>
-                </div>
-            </div>
-            
-            <!-- Карточка 5 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Справедливая администрация</h3>
-                    <p class="card-text">Комфортная атмосфера для всех игроков</p>
-                </div>
-            </div>
-            
-            <!-- Карточка 6 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-calendar"></i>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Интересные ивенты</h3>
-                    <p class="card-text">Проведение ивентов связанных с историческими событиями</p>
-                </div>
-            </div>
+            </a>
         </div>
-    </section>
-    
-    <section class="vip-section">
-        <h2 class="section-title">РАСПРОДАЖА КИБЕРОРЕШНИК</h2>
-        
-        <div class="vip-cards">
-            <!-- Карточка VIP 1 -->
-            <div class="vip-card">
-                <div class="vip-header">
-                    <h3 class="vip-name">ПРОХОДКА</h3>
-                    <div class="vip-price">150 ₽</div>
-                    <div class="vip-duration">/ 30 ДНЕЙ</div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo-section">
+                        <div class="logo">SC</div>
+                        <span class="company-name">StitchCraft</span>
+                    </div>
+                    <p>Профессиональное швейное бюро с индивидуальным подходом к каждому клиенту.</p>
                 </div>
-                <div class="vip-features">
-                    <div class="vip-feature">
-                        <i class="fas fa-terminal"></i>
-                        <span>VIP очередь</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-id-badge"></i>
-                        <span>Cтатус на сервере</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-server"></i>
-                        <span>Смена сторон</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-users-slash"></i>
-                        <span>Роль VIP в дискорде</span>
-                    </div>
-                    <a href="#" class="vip-button">BUY ACCESS</a>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>ул. Портная, 15, Москва</p>
+                    <p>info@stitchcraft.ru</p>
                 </div>
-            </div>
-            
-            <!-- Карточка VIP 2 (популярная) -->
-            <div class="vip-card">
-                <div class="popular-badge">HOT</div>
-                <div class="vip-header">
-                    <h3 class="vip-name">КЛАНОВЫЙ-BAZA</h3>
-                    <div class="vip-price">590 ₽</div>
-                    <div class="vip-duration">/30 дней</div>
+                
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 10:00 - 20:00</p>
+                    <p>Сб-Вс: 11:00 - 18:00</p>
                 </div>
-                <div class="vip-features">
-                    <div class="vip-feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>VIP очередь</span>
+                
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">WhatsApp</a>
                     </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-tank"></i>
-                        <span>15 Человек</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-calendar-star"></i>
-                        <span>Смена сторон</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-paint-roller"></i>
-                        <span>Управление через дискорд</span>
-                    </div>
-                    <a href="#" class="vip-button">BUY ACCESS</a>
                 </div>
             </div>
             
-            <!-- Карточка VIP 3 -->
-            <div class="vip-card">
-                <div class="vip-header">
-                    <h3 class="vip-name">Клановый-ультра</h3>
-                    <div class="vip-price">999 ₽</div>
-                    <div class="vip-duration">/30 дней</div>
-                </div>
-                <div class="vip-features">
-                    <div class="vip-feature">
-                        <i class="fas fa-crown"></i>
-                        <span>VIP Преимущества</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Доступ к админ-чату</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-tank-heavy"></i>
-                        <span>30 человек</span>
-                    </div>
-                    <div class="vip-feature">
-                        <i class="fas fa-id-card-alt"></i>
-                        <span>Оформление клана в игре</span>
-                    </div>
-                    <a href="#" class="vip-button">BUY ACCESS</a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ваша компания. Все права защищены.</p>
             </div>
-        </div>
-    </section>
-    
-    <footer>
-        <p class="footer-txt">© 2025 Клан "РУСИЧ" | Все права защищены</p>
-        <p class="footer-txt">Неофициальное сообщество игроков Squad. Мы не аффилированы с Offworld Industries.</p>
-        <div class="image-links-container">
-            <a href="#" class="image-link">
-                <img src="image/free-icon-telegram-2111646.png" alt="Телеграм">
-                <span class="image-caption">Наш канал</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image/discord.png" alt="Дискорд">
-                <span class="image-caption">Наш сервер</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image/free-icon-youtube-3670147.png" alt="YouTube">
-                <span class="image-caption">Наш YouTube</span>
-            </a>
-            <a href="#" class="image-link">
-                <img src="image/dataset-card.png" alt="RUTUBE">
-                <span class="image-caption">Наш RUTUBE</span>
-            </a>
         </div>
     </footer>
 
-    <script>
-        // Вариант 1: Использование BattleMetrics API (предпочтительный способ)
-        async function fetchViaAPI() {
-            try {
-                // Ваш ключ API BattleMetrics (если есть)
-                const API_KEY = '';
-                const SERVER_ID = '20237222';
-                
-                const response = await fetch(`https://api.battlemetrics.com/servers/${SERVER_ID}${API_KEY ? '?access_token=' + API_KEY : ''}`);
-                
-                if (!response.ok) throw new Error('API error');
-                
-                const data = await response.json();
-                
-                document.getElementById('players').textContent = data.data.attributes.players;
-                document.getElementById('map').textContent = data.data.attributes.details.map;
-                document.getElementById('status').textContent = 'онлайн (API)';
-                document.getElementById('status').className = 'success';
-                
-                return true;
-            } catch (error) {
-                console.log('API метод не сработал, пробуем альтернативы');
-                return false;
-            }
-        }
-
-        // Вариант 2: Использование JSONP-эмуляции через callback
-        function fetchViaJSONP() {
-            return new Promise((resolve) => {
-                const callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
-                const script = document.createElement('script');
-                
-                window[callbackName] = function(data) {
-                    delete window[callbackName];
-                    document.body.removeChild(script);
-                    
-                    if (data && data.data) {
-                        document.getElementById('players').textContent = data.data.attributes.players;
-                        document.getElementById('map').textContent = data.data.attributes.details.map;
-                        document.getElementById('status').textContent = 'онлайн (JSONP)';
-                        document.getElementById('status').className = 'success';
-                        resolve(true);
-                    } else {
-                        resolve(false);
-                    }
-                };
-                
-                script.src = `https://api.battlemetrics.com/servers/20237222?callback=${callbackName}`;
-                document.body.appendChild(script);
-                
-                // Таймаут на случай ошибки
-                setTimeout(() => {
-                    if (window[callbackName]) {
-                        delete window[callbackName];
-                        document.body.removeChild(script);
-                        resolve(false);
-                    }
-                }, 5000);
-            });
-        }
-
-        // Вариант 3: Парсинг через серверный прокси (вам нужно создать свой)
-        async function fetchViaProxy() {
-            try {
-                // Замените на URL вашего собственного прокси-сервера
-                const proxyUrl = 'https://your-proxy-server.com/battlemetrics?serverId=20237222';
-                const response = await fetch(proxyUrl);
-                
-                if (!response.ok) throw new Error('Proxy error');
-                
-                const data = await response.json();
-                
-                document.getElementById('players').textContent = data.players;
-                document.getElementById('map').textContent = data.map;
-                document.getElementById('status').textContent = 'онлайн (прокси)';
-                document.getElementById('status').className = 'success';
-                
-                return true;
-            } catch (error) {
-                console.log('Proxy метод не сработал');
-                return false;
-            }
-        }
-
-        // Основная функция загрузки данных
-        async function loadServerData() {
-            // Пробуем разные методы по очереди
-            if (await fetchViaAPI()) return;
-            if (await fetchViaJSONP()) return;
-            if (await fetchViaProxy()) return;
-            
-            // Если все методы не сработали
-            document.getElementById('players').textContent = 'недоступно';
-            document.getElementById('map').textContent = 'недоступно';
-            document.getElementById('status').textContent = 'ошибка загрузки';
-            document.getElementById('status').className = 'error';
-        }
-
-        // Загружаем данные при открытии страницы
-        document.addEventListener('DOMContentLoaded', loadServerData);
-        
-        // Обновляем каждые 2 минуты
-        setInterval(loadServerData, 120000);
-    </script>
-    <script>
-  // Меню бургер
-  const menuToggle = document.createElement('div');
-  menuToggle.className = 'menu-toggle';
-  menuToggle.innerHTML = '<span></span><span></span><span></span>';
-  document.querySelector('.header').appendChild(menuToggle);
-  
-  const navList = document.querySelector('.nav-list');
-  const menuItems = document.querySelectorAll('.nav-item');
-  
-  menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navList.classList.toggle('active');
-  });
-  
-  // Закрытие меню при клике на пункт
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      menuToggle.classList.remove('active');
-      navList.classList.remove('active');
-    });
-  });
-  
-  // Эффект при скролле
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      document.querySelector('.header').classList.add('scrolled');
-    } else {
-      document.querySelector('.header').classList.remove('scrolled');
-    }
-  });
-</script>
-<script>
-  // Имитация загрузки данных сервера
-  setTimeout(() => {
-    document.getElementById('players').textContent = '24/50';
-    document.getElementById('players').classList.remove('loading');
-    
-    document.getElementById('map').textContent = 'Fallujah';
-    document.getElementById('map').classList.remove('loading');
-    
-    document.getElementById('status').textContent = 'онлайн';
-    document.getElementById('status').style.color = '#4CAF50';
-  }, 2000);
-  
-  // Анимация карточек при скролле
-  const cards = document.querySelectorAll('.card, .vip-card');
-  
-  const animateCards = () => {
-    cards.forEach((card, index) => {
-      const cardPosition = card.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.3;
-      
-      if (cardPosition < screenPosition) {
-        setTimeout(() => {
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        }, index * 100);
-      }
-    });
-  };
-  
-  // Инициализация
-  window.addEventListener('load', () => {
-    cards.forEach(card => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(20px)';
-      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    });
-    animateCards();
-  });
-  
-  window.addEventListener('scroll', animateCards);
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
